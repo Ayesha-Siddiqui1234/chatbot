@@ -1,5 +1,5 @@
 import streamlit as st
-from langchain.llms import HuggingfaceHub
+from langchain_community.llms import HuggingFaceHub
 import os
 
 hf_token=os.getenv('HF_TOKEN') 
