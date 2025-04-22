@@ -3,7 +3,7 @@ from langchain_community.llms import HuggingFaceHub
 import os
 
 hf_token = os.getenv('HF_TOKEN')
-repo_id = "mistralai/Mistral-7B-Instruct-v0.1"
+repo_id = "openai-community/gpt2"
 os.environ['HUGGINGFACEHUB_API_TOKEN'] = hf_token
 
 llm = HuggingFaceHub(repo_id=repo_id, model_kwargs={"max_length": 128, "temperature": 0.7})
